@@ -18,7 +18,7 @@ describe('test in <SearchGiphy/>', () => {
 	afterAll(cleanup);
 
 	test('check when user gets values by typing', () => {
-		fireEvent.change(input, { target: { value: 'dragon ball' } });
+		fireEvent.input(input, { target: { value: 'dragon ball' } });
 		expect(input.value).toEqual('dragon ball');
 	});
 
